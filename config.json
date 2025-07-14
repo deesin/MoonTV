@@ -76,6 +76,38 @@
     "ikun": {
       "api": "https://ikunzyapi.com/api.php/provide/vod",
       "name": "iKun资源"
+    },
+    "lzi": {
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "name": "影视工厂"
+    },
+    "uku": {
+      "api": "http://api.ukuapi.com/api.php/provide/vod",
+      "name": "U酷资源"
+    },
+    "bdzy": {
+      "api": "http://api.apibdzy.com/api.php/provide/vod",
+      "name": "百度资源"
+    },
+    "lovedan": {
+      "api": "http://lovedan.net/api.php/provide/vod",
+      "name": "艾旦影视"
+    },
+    "fhzy": {
+      "api": "http://fhapi9.com/api.php/provide/vod",
+      "name": "番号资源"
+    },
+    "lsbzy": {
+      "api": "https://apilsbzy1.com/api.php/provide/vod",
+      "name": "老色逼资源"
+    },
+    "slzy": {
+      "api": "http://slapibf.com/api.php/provide/vod",
+      "name": "森林资源"
+    },
+    "aosikazy": {
+      "api": "http://aosikazy.com/api.php/provide/vod",
+      "name": "奥斯卡资源网"
     }
   }
 }
