@@ -33,13 +33,11 @@ export async function POST(request: NextRequest) {
       Announcement,
       SearchDownstreamMaxPage,
       SiteInterfaceCacheTime,
-      SearchResultDefaultAggregate,
     } = body as {
       SiteName: string;
       Announcement: string;
       SearchDownstreamMaxPage: number;
       SiteInterfaceCacheTime: number;
-      SearchResultDefaultAggregate: boolean;
     };
 
     // 参数校验
@@ -47,8 +45,7 @@ export async function POST(request: NextRequest) {
       typeof SiteName !== 'string' ||
       typeof Announcement !== 'string' ||
       typeof SearchDownstreamMaxPage !== 'number' ||
-      typeof SiteInterfaceCacheTime !== 'number' ||
-      typeof SearchResultDefaultAggregate !== 'boolean'
+      typeof SiteInterfaceCacheTime !== 'number'
     ) {
       return NextResponse.json({ error: '参数格式错误' }, { status: 400 });
     }
@@ -73,7 +70,6 @@ export async function POST(request: NextRequest) {
       Announcement,
       SearchDownstreamMaxPage,
       SiteInterfaceCacheTime,
-      SearchResultDefaultAggregate,
     };
 
     // 写入数据库

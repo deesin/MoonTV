@@ -37,9 +37,9 @@ export async function GET(request: NextRequest) {
 
 async function refreshRecordAndFavorites() {
   if (
-    process.env.NEXT_PUBLIC_STORAGE_TYPE ||
-    'localstorage' === 'localstorage'
+    (process.env.NEXT_PUBLIC_STORAGE_TYPE || 'localstorage') === 'localstorage'
   ) {
+    console.log('跳过刷新：当前使用 localstorage 存储模式');
     return;
   }
 
